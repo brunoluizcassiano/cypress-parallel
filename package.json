@@ -1,6 +1,11 @@
 {
   "scripts" :{
     "cy:run": "cypress run",
+    "cy:run:batch-1": "cypress run --spec 'cypress/integration/features/batch-1'",
+    "cy:run:batch-2": "cypress run --spec 'cypress/integration/features/batch-2'",
+    "cy:run:batch-3": "cypress run --spec 'cypress/integration/features/batch-3'",
+    "cy:run:batch-4": "cypress run --spec 'cypress/integration/features/batch-4'",
+    "cy:run:batch-5": "cypress run --spec 'cypress/integration/features/batch-5'",
     "cy:parallel" : "cypress-parallel -s cy:run -t 5 -d 'cypress/integration/features/' -a '\"<your-cypress-cmd-args>\"'"
   },
   "cypress-cucumber-preprocessor":{
