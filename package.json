@@ -1,7 +1,7 @@
 {
   "scripts" :{
     "cy:run": "cypress run",
-    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d 'cypress/integration/features/' -a '\"<your-cypress-cmd-args>\"'"
+    "cy:parallel" : "cypress-parallel -s cy:run -t 5 -d 'cypress/integration/features/' -a '\"<your-cypress-cmd-args>\"'"
   },
   "cypress-cucumber-preprocessor":{
     "stepDefinitions": [
