@@ -1,0 +1,17 @@
+{
+  "scripts" :{
+    "cy:run": "cypress run",
+    "cy:parallel" : "cypress-parallel -s cy:run -t 2 -d 'cypress/integration/features/' -a '\"<your-cypress-cmd-args>\"'"
+  },
+  "cypress-cucumber-preprocessor":{
+    "stepDefinitions": [
+      "cypress/integration/**/*.js"
+    ]
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2",
+    "cypress": "^13.13.2",
+    "cypress-parallel": "^0.14.0"
+  }
+}
